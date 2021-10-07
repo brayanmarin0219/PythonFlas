@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -23,7 +23,7 @@ def Registro():
 
 @app.route('/login', methods = ["GET","POST"])
 def Login():
-    return  "Pagina de Login "    
+    return render_template("login.html")  
 
 @app.route('/perfil_paciente', methods = ["GET"])
 def Paciente():
@@ -88,7 +88,7 @@ def editar_2():
 
 @app.route('/perfil_superadministrativo/citas', methods = ["GET","POST"])
 def Citas_4():
-    return  "Pagina de Citas "
+    return  "Pagina de Citas"
 #crear, eliminar, editar 
 
 
