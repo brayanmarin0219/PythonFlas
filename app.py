@@ -23,7 +23,7 @@ def Registro():
 
 @app.route('/login', methods = ["GET","POST"])
 def Login():
-    return render_template("login.html")  
+    return render_template("login.html")  # html listo
 
 @app.route('/perfil_paciente', methods = ["GET"])
 def Paciente():
