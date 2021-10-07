@@ -88,7 +88,7 @@ def editar_2():
 
 @app.route('/perfil_superadministrativo/citas', methods = ["GET","POST"])
 def Citas_4():
-    return  "Pagina de Citas "
+    return  "Pagina de Citas"
 #crear, eliminar, editar 
 
 
