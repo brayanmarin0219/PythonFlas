@@ -8,12 +8,21 @@
 </head>
 
 <body>
-    <ul>
-        <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Services</a></li>
-        <li><a>Partners</a></li>
-        <li><a>Contacts</a></li>
-        </ul>    
+    <SCRIPT  language=JavaScript> 
+        function go(){
+        
+        if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO'){ 
+                document.form.submit(); 
+            } 
+            else{ 
+                 alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+            } 
+        } 
+        </SCRIPT> 
+        <FORM name=form action="TU_PAGINA_WEB.HTML">
+        
+        <P>Usuario:    <INPUT type=text name=login> 
+        <P>Contraseña: <INPUT type=password name=password> 
+        <INPUT onclick=go() type=button value=Acceder>
 </body>
 </html>
