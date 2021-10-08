@@ -1,9 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route('/')
 def Inicio():
+    
     #Añadir mision, vision, Valores empresariales 
     return  "Pagina de Inicio "
 
@@ -23,7 +24,7 @@ def Registro():
 
 @app.route('/login', methods = ["GET","POST"])
 def Login():
-    return render_template("login.html")  
+    return  "Pagina de Login "    
 
 @app.route('/perfil_paciente', methods = ["GET"])
 def Paciente():
@@ -88,7 +89,7 @@ def editar_2():
 
 @app.route('/perfil_superadministrativo/citas', methods = ["GET","POST"])
 def Citas_4():
-    return  "Pagina de Citas"
+    return  "Pagina de Citas "
 #crear, eliminar, editar 
 
 
