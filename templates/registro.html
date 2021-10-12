@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Bosque de Maria</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/registro.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="panel first-column">
+            <a class="logo" href="/login"><img src="mdn-logo-sm.png" alt="logo"></a>
+            <div class="spacer"></div>
+            <div class="icons-container">  
+                <i class="fas fa-user-md fa-9x"></i>
+                <i class="fas fa-notes-medical fa-9x"></i>
+                <i class="fas fa-hospital fa-9x"></i>
+            </div>
+            <div class="titulo">  
+                <h1 class="welcome title1">Bienvenido a Bosque de Maria</h1>
+                <h2 class="welcome description">Su software confiable para la gestión de citas médicas</h2>
+            </div>
+        </div>
+        <div class="panel second-column">
+            <div class="spacer"></div>
+            <h2 class="panel2-text login">Crear cuenta</h2>
+            <h3 class="panel2-text register">Ya estás registrado? <br> <a class="link-registro" href="/login">Ingresa</a></h3>
+            <form action="">
+                <p class="label">Ingrese su nombre</p>
+                <input id="user" class="input-text" type="text">
+                <p class="label">Ingrese su email</p>
+                <input id="email" class="input-text" type="text">
+                <p class="label">Digite su contraseña</p>
+                <input id="pass" class="input-text" type="text">
+                <p class="label">Ingrese su fecha de nacimiento</p>
+                <input id="fecha_nacimiento" class="input-text" type="date">
+                <button type="submit">REGISTRO</button>
+            </form>
+            <div class="spacer"></div>
+        </div>
+    </div>
+</body>
+</html>

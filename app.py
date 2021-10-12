@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -19,12 +20,12 @@ def Preguntas_frecuentes():
 
 @app.route('/registro', methods = ["GET","POST"])
 def Registro():
-    return  "Pagina de Registro "
+    return  render_template("/registro.html") 
 #REGISTRO YA VA HA TENER EL FORMULARIO
 
 @app.route('/login', methods = ["GET","POST"])
 def Login():
-    return  "Pagina de Login "    
+    return  render_template("/login.html") 
 
 @app.route('/perfil_paciente', methods = ["GET"])
 def Paciente():
