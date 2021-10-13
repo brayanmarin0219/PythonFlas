@@ -25,11 +25,7 @@ def Registro():
 
 @app.route('/login', methods = ["GET","POST"])
 def Login():
-<<<<<<< HEAD
-    return render_template("login.html")  # html listo
-=======
     return  render_template("/login.html") 
->>>>>>> 09e346febb9f55e66cce314a67009064b5f2012c
 
 @app.route('/perfil_paciente', methods = ["GET"])
 def Paciente():
