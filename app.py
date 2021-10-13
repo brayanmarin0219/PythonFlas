@@ -1,9 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def Inicio():
+    
     #Añadir mision, vision, Valores empresariales 
     return  "Pagina de Inicio "
 
@@ -18,12 +20,16 @@ def Preguntas_frecuentes():
 
 @app.route('/registro', methods = ["GET","POST"])
 def Registro():
-    return  "Pagina de Registro "
+    return  render_template("/registro.html") 
 #REGISTRO YA VA HA TENER EL FORMULARIO
 
 @app.route('/login', methods = ["GET","POST"])
 def Login():
+<<<<<<< HEAD
     return render_template("login.html")  # html listo
+=======
+    return  render_template("/login.html") 
+>>>>>>> 09e346febb9f55e66cce314a67009064b5f2012c
 
 @app.route('/perfil_paciente', methods = ["GET"])
 def Paciente():
@@ -65,7 +71,7 @@ def Datos_personales_1():
 
 @app.route('/perfil_superadministrativo', methods = ["GET"])
 def superadministrativo () :
-    return "Administrativo super usuario"
+    return render_template("/superadmin.html")
 
 @app.route('/perfil_superadministrativo/historia_medica', methods = ["GET","POST"])
 def Historia_medica_1():
@@ -88,7 +94,7 @@ def editar_2():
 
 @app.route('/perfil_superadministrativo/citas', methods = ["GET","POST"])
 def Citas_4():
-    return  "Pagina de Citas"
+    return  "Pagina de Citas "
 #crear, eliminar, editar 
 
 
