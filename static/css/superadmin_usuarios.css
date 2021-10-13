@@ -72,8 +72,8 @@ body {
   padding-left: 20px;
 }
 
-.side-dashboard {
+.side-users {
   background: -webkit-gradient(linear, left top, right top, from(#7c2ae8), to(#5271ff));
   background: linear-gradient(90deg, #7c2ae8 0%, #5271ff 100%);
 }
-/*# sourceMappingURL=superadmin.css.map */
+/*# sourceMappingURL=superadmin_usuarios.css.map */

@@ -7,7 +7,7 @@ app = Flask(__name__)
 def Inicio():
     
     #Añadir mision, vision, Valores empresariales 
-    return  "Pagina de Inicio "
+    return  render_template("/inicio.html")
 
 @app.route('/contacto', methods = ["GET"])
 def contato():
@@ -16,7 +16,7 @@ def contato():
 
 @app.route('/contacto/preguntas_frecuentes', methods = ["GET"])
 def Preguntas_frecuentes():
-    return  "Preguntas frecuentes"
+    return  render_template("/PQR.html")
 
 @app.route('/registro', methods = ["GET","POST"])
 def Registro():
@@ -29,7 +29,7 @@ def Login():
 
 @app.route('/perfil_paciente', methods = ["GET"])
 def Paciente():
-    return  "Pagina de Pacientes"
+    return  render_template("/Perfil_pacientes.html")
 
 @app.route('/perfil_paciente/citas', methods = ["GET","POST"])
 def Citas():
@@ -76,7 +76,7 @@ def Historia_medica_1():
 
 @app.route('/perfil_superadministrativo/usuarios', methods = ["GET","POST"])
 def Usuarios_9():
-    return "Creacion de usuarios"
+    return render_template("/superadmin_usuarios.html")
     #Crear usuario
 
 @app.route('/perfil_superadministrativo/usuarios/consultar', methods = ["GET","POST"])
