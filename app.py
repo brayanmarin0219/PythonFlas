@@ -67,7 +67,7 @@ def Datos_personales_1():
 
 @app.route('/perfil_superadministrativo', methods = ["GET"])
 def superadministrativo () :
-    return "Administrativo super usuario"
+    return render_template("/superadmin.html")
 
 @app.route('/perfil_superadministrativo/historia_medica', methods = ["GET","POST"])
 def Historia_medica_1():
