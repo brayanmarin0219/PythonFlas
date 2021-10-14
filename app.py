@@ -12,11 +12,11 @@ def Inicio():
 @app.route('/contacto', methods = ["GET"])
 def contato():
     #PQR, DIRECTORIO
-    return  "Pagina de Contacto"
+    return  render_template("/contacto.html")
 
 @app.route('/contacto/preguntas_frecuentes', methods = ["GET"])
 def Preguntas_frecuentes():
-    return  render_template("/PQR.html")
+    return  render_template("/FAQ.html")
 
 @app.route('/registro', methods = ["GET","POST"])
 def Registro():
@@ -48,7 +48,7 @@ def Datos_personales():
 
 @app.route('/perfil_medico', methods = ["GET"])
 def Medico():
-    return  "Pagina de Medico "
+    return  render_template("/Medico.html")
 
 @app.route('/perfil_medico/historia_medica', methods = ["GET","POST"])
 def Historia_medica():
@@ -81,11 +81,11 @@ def Usuarios_9():
 
 @app.route('/perfil_superadministrativo/usuarios/consultar', methods = ["GET","POST"])
 def Consultar_9():
-    return "Consultar usuarios"
+    return render_template("/super_admin_consultar.html")
 
 @app.route('/perfil_superadministrativo/usuarios/consultar/editar', methods = ["GET","POST"])
 def editar_2():
-    return "Editar Usuario"
+    return render_template("/superadmin_editar_usuario.html")
 #eliminar, editar
 
 @app.route('/perfil_superadministrativo/citas', methods = ["GET","POST"])

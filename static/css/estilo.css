@@ -1,0 +1,147 @@
+header{
+
+height: 200px;
+background-color: #14128A;
+
+}
+
+header h1{
+
+    text-align: center;
+    color: aliceblue;
+    font: oblique bold 220% Segoe UI;
+    }
+
+header img{
+
+display: block;
+margin: auto;
+padding: 10px;
+height: 150px;
+width: 150px;
+
+}
+
+
+nav.navbar {
+    background-color: #14128A;
+
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+}
+
+.carousel-inner{
+ height: 400px;
+}
+
+.logo{
+
+width: 25px;
+
+
+}
+
+.iconos-redes-sociales{
+
+width: 20px;
+margin: 10px 5px;
+
+
+}
+
+.banner{
+
+width: 100%;
+height: 700px;
+border: 2px solid black;
+
+
+}
+
+#divCitas{
+
+margin: 0 auto;
+width: 90%;
+height: 80%;
+text-align: center;
+
+
+}
+
+
+#divCitas h1{
+ 
+    font: oblique bold 220% Segoe UI;
+
+    }
+.Tabla {
+    margin: 0 auto;
+    font: oblique bold 150% Segoe UI;
+    text-align: center;
+    border: #b2b2b2 3px solid;
+  }
+  
+.Tabla td, th {
+    padding: 10px;
+    border: black 3px solid;
+  }
+
+  .Tabla td, th, button {
+    padding: 5px;
+  }
+
+#Imagen{
+
+padding-top: 80px;
+padding-left: 40px;
+float: left;
+}
+
+#Parrafo{
+
+    text-align: center;
+    padding-top: 200px;
+    padding-left: 80px;
+    float: left;
+    
+    
+    }
+
+#ImagenInicio{
+
+width: 440px;
+height: 400px;
+border-radius: 200%;
+
+}
+
+
+.titulos{
+
+    margin-top: 40px;
+    text-align: center;
+    font: oblique bold 200% Segoe UI;
+
+}
+
+footer{
+
+background-color: black;
+
+
+}
+
+#main{
+margin-top: 60px;
+margin-bottom: 50px;
+
+}
+
+
+
+
+
+
