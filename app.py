@@ -57,7 +57,7 @@ def Paciente():
 
 @app.route('/perfil_paciente/citas', methods = ["GET","POST"])
 def Citas():
-    return  "Pagina de Citas "
+    return  render_template("/Citas.html")
 #Crear hmtl para crear, y consultar, ver citas 
 
 @app.route('/perfil_paciente/comentarios', methods = ["GET","POST"])
