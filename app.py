@@ -3,6 +3,30 @@ from flask import render_template
 
 app = Flask(__name__)
 
+usuarios = {
+    1: {
+        "nombre": "brayan",
+        "tipoUsuario": "medico",
+        "usuario": "email",
+        "password": "contrasena"
+    }
+}
+
+citas = {
+    1: {
+        "fecha": "date",
+        "medico": "nombre medico",
+        "paciente": "nombre paciente"
+    }
+}
+
+comentarios = {
+    1: {
+        "idCita": "referencia de cita",
+        "mensaje": "mensaje del comentario"
+    }
+}
+
 @app.route('/')
 def Inicio():
     
