@@ -1,8 +1,17 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask import render_template
+from flask import redirect
+from flask import request
+
+from models import *
+from config import dev
+import flask_login
 
 app = Flask(__name__)
+app.config.from_object(dev)
+
+db.init_app(app)
 
 usuarios = {
     1: {
@@ -120,4 +129,4 @@ def Citas_4():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
